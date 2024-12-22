@@ -1,19 +1,35 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(10, 20px);
+    grid-template-columns: repeat(10, 33px);
     gap: 2px;
-  }
-  
-  .cell {
-    width: 20px;
-    height: 20px;
+    margin: 3px 3px 9px 3px;
+}
+
+.cell {
+    width: 33px;
+    height: 33px;
     border: 1px solid #ccc;
-  }
-  
-  .cell.alive {
-    background-color: green;
-  }
-  
-  .cell.dead {
+}
+
+.cell.alive {
+    background-color: rgb(34, 0, 128);
+}
+
+.cell.dead {
     background-color: white;
-  }
+}
+
+button {
+    margin: 6px;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        width: 100%;
+    }
+
+    .cell {
+        width: 33px;
+        height: 33px;
+    }
+}

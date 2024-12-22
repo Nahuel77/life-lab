@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { computeNextGeneration } from '../utils/gameOfLife'
 import './tablero.css'
 
@@ -27,6 +27,19 @@ const Tablero: React.FC = () => {
     const handleNextStep = () => {
         setGrid(computeNextGeneration(grid));
     };
+
+    useEffect(() => {
+        let interval: number | undefined;
+        if (isRunning) {
+            interval = setInterval(() => {
+                handleNextStep();
+            }, 300);
+        } else {
+            clearInterval(interval);
+        }
+        return () => clearInterval(interval);
+    }, [isRunning, grid]);
+
     return (
         <div>
             <div className="grid">
