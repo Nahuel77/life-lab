@@ -1,12 +1,14 @@
-import { useState } from 'react'
 import './App.css'
+import Tablero from './components/tablero'
 
 function App() {
-  const [] = useState(0)
 
   return (
     <>
-    <h1>Hola Mundo. Vayanse a la mierda</h1>
+      <div>
+        <h1>Life Lab</h1>
+        <Tablero></Tablero>
+      </div>
     </>
   )
 }
