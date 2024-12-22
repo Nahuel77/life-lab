@@ -15,7 +15,7 @@ const createInitialGrid = (rows: number, cols: number): boolean[][] => {
 };
 
 const Tablero: React.FC = () => {
-    const [grid, setGrid] = useState<boolean[][]>(createInitialGrid(10, 10));
+    const [grid, setGrid] = useState<boolean[][]>(createInitialGrid(13, 13));
     const [isRunning, setIsRunning] = useState(false);
 
     const toggleCell = (row: number, col: number) => {
