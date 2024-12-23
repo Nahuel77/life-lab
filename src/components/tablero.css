@@ -28,6 +28,7 @@ label{
 }
 
 @media (max-width: 768px) {
+    
     .grid {
         width: 100%;
     }

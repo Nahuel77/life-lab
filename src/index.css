@@ -70,7 +70,7 @@ button:focus-visible {
 @media (max-width: 768px){
   body{
     flex-direction: column;
-    min-width: 120px;
-    min-height: 100vh;
+    /*min-width: 120px;
+    min-height: 100vh;*/
   }
 }

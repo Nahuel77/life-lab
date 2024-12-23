@@ -7,21 +7,16 @@
 
 .contenedor{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.seccion{
+  text-align: initial;
+  margin: 0 4rem;
+}
+
+@media (max-width: 768px){
+  .contenedor{
+    flex-direction: column;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

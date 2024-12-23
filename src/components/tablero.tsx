@@ -88,7 +88,7 @@ const Tablero: React.FC = () => {
             </button>
             <button onClick={handleClearGrid}>Clear</button>
             <button onClick={handleGenerate}>Generate</button>
-            <label htmlFor="counter">counter: {counter}</label>
+            <label htmlFor="counter">Generación: {counter}</label>
         </div>
     );
 }
